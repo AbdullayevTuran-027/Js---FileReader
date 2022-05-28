@@ -1,0 +1,69 @@
+.upload-area {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .photo-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 300px;
+    border: 5px dashed rgba(0, 0, 0, 0.493);
+  }
+  .photo-upload input {
+    display: none;
+  }
+  .fa-upload {
+    font-size: 100px;
+    opacity: 0.5;
+    cursor: pointer;
+    animation: uploadIcons 3s infinite;
+  }
+  .galery-area {
+    display: flex;
+    justify-content: center;
+  }
+  .galery {
+    width: 800px;
+  }
+  .galery-items {
+    display: block;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .galery-items a {
+    display: block;
+    text-align: center;
+    width: 91%;
+    padding: 2px 31px;
+    background-color: rgba(224, 223, 223, 0.83);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+  }
+  
+  .galery-items a:hover {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(196, 196, 196, 0.87);
+  }
+  .galery img {
+    max-width: 90%;
+    object-fit: fill;
+  }
+  
+  @keyframes uploadIcons {
+    0% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
